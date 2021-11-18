@@ -1,0 +1,31 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=2056
+END=4496
+title=Network Requests cy.request() - make an XHR request
+[CHAPTER]
+TIMEBASE=1/1000
+START=5711
+END=6974
+title=Network Requests cy.request() - verify response using BDD syntax
+[CHAPTER]
+TIMEBASE=1/1000
+START=7331
+END=8243
+title=Network Requests cy.request() with query parameters
+[CHAPTER]
+TIMEBASE=1/1000
+START=7644
+END=9160
+title=Network Requests cy.request() - pass result to the second request
+[CHAPTER]
+TIMEBASE=1/1000
+START=9238
+END=10697
+title=Network Requests cy.request() - save response in the shared test context
+[CHAPTER]
+TIMEBASE=1/1000
+START=9644
+END=12158
+title=Network Requests cy.intercept() - route responses to matching requests
