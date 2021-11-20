@@ -15,6 +15,8 @@ describe('My Seventh Test', () => {
         cy.get('input[name="name"]:nth-child(2)').should('have.attr','minlength','2')
         cy.get('#inlineRadio3').should('be.disabled')
         cy.get(':nth-child(2) > a.nav-link').click()
-        cy.selectProduct('Blackberry')
+        this.data.productName.forEach(element => {
+            cy.selectProduct(element) 
+        });
     })
 })
