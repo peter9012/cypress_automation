@@ -23,8 +23,22 @@ describe('My Seventh Test', () => {
         });
 
         productPage.checkOutButton().click()
+        var sum = 0
         cy.get('tr td:nth-child(4) strong').each(($el, index, $list) => {
             cy.log($el.text())
+            const actualText = $el.text()
+            var res = actualText.split(" ")
+            res = res[1].trim()
+            sum = Number(sum) + Number(res)
+            cy.log(res)
+        }).then(function(){
+            cy.log(sum)
+        })
+        cy.get('tr td:nth-child(5) strong').then(function(element){
+            const amount = element.text()
+            var res = amount.split(" ")
+            var total = res[1].trim()
+            expect(Number(total)).to.equal(sum)
         })
         cy.contains('Checkout').click()
         cy.get('#country').type('United States')
