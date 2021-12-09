@@ -1,4 +1,4 @@
-describe('My Security Test Suite', function() 
+describe('My Security Test', function() 
 {
  
 it('My Security case',function() {
